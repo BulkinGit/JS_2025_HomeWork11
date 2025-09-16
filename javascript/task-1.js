@@ -92,6 +92,7 @@ if (confirm("Почати тестування?")) {
   document.write(`загальний прибуток за робочі дні - ${allSumWorkDays}<br>`);
   document.write(`загальний прибуток за вихідні дні - ${allSumWeekends}<br>`);
   document.write(`максимальний прибуток за середу - ${maxValue}<br>`);
-  document.write(`максимальний прибуток за середу - ${filterValue}<br>`);
+  document.write(`сформувати загальний список (одновимірний масив) зі значенням, які що більші за 200 - ${filterValue}<br>`);
   // console.log(getFilterValue(shops));
 }
+
