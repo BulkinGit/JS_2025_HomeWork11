@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  /* list-style: none; */
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-block: 80px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ul {
+  display: inline-block;
+}
+
+.li {
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.li::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  left: 0;
+  top: 100%;
+  background-color: #de6c27;
+  transition: all 0.3s;
+}
+
+.li:not(:last-child) {
+  margin-bottom: 32px;
+}
+.li:hover {
+  color: #de6c27;
+  cursor: pointer;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.li:hover::before {
+  width: 100%;
+}
